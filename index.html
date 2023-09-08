@@ -1085,7 +1085,7 @@ h2 {
 		<div class="card2-header">Recent Payments</div>
 		<div class="card2-body">
 			<ul id="payments-list">
-				<li class="payment-item">Payment of 0.5 ETH sent to user123</li>
+				<li class="payment-item">Payment of 0.5 ETH sent to 0x123</li>
 			</ul>
 		</div>
 	</div>
@@ -1119,9 +1119,9 @@ h2 {
     <div class="footer-container">
       <ul class="footer-links">
         <li><a href="/">Home</a></li>
-        <li><a href="https://smartfunds-ai.netlify.app/faq">FAQ</a></li>
+        <li><a href="https://bot-ethereum.netlify.app/faq">FAQ</a></li>
         <li><a href="https://t.me/SmartFundsAI">Support</a></li>
-        <li><a href="https://smartfunds-ai.netlify.app/terms">Terms &amp; Conditions</a></li>
+        <li><a href="https://bot-ethereum.netlify.app/terms">Terms &amp; Conditions</a></li>
         <li><a href="/privacy">Privacy Policy</a></li>
       </ul>
       <div class="footer-contact">
@@ -1163,7 +1163,7 @@ h2 {
 		const user = "user" + Math.floor(Math.random() * 1000); // generar un usuario aleatorio
 		const coin = Math.random() < 0.5 ? "ETH" : "BNB"; // elegir aleatoriamente entre ETH y BNB
 		const amount = (Math.random() * 5 + 0.1).toFixed(2); // generar un monto aleatorio entre 0.1 y 5
-		const payment = `<li class="payment-item">Payment of ${amount} ${coin} sent to ${user}</li>`;
+		const payment = `<li class="payment-item">Payment of ${amount} ${coin} sent to ${0x}</li>`;
 		paymentsList.insertAdjacentHTML("afterbegin", payment); // agregar el pago a la lista
 		paymentsList.firstChild.style.opacity = 1;
 		if (paymentsList.childElementCount > 5) {
